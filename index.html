@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>ms-slider 3D</title>
+
+    <link rel="stylesheet" href="styles/ms.slider.css"/> <!-- Connecting styles for slide -->
+    <script language = "javascript" src="js/jquery-1.11.1.min.js"></script> <!-- Connecting framework jquery -->
+    <script language = "javascript" src="js/ms.slider.js"></script> <!-- Connecting script for animating -->
+    
+    <!-- Settings of the slider -->
+    <script language = "javascript">
+        var mslider = {
+            width: 740, // Setting the width 
+            height: 412, // Setting the height
+            timeAnimation: 750, // time animating
+            autoplay: false, // Auto play, takes values: «true», «false»
+            timeout: 105, // Interval between animations. ( It is applied when parameter action = «multiRotateX» or action =  «multiRotateY»)
+            pause: 3000, // Pause between the execution of the animation (it is applied when parameter autoplay = «true»)
+            action: 'multiRotateX' //Animation effect, takes values: «rotateX», «rotateY», «multiRotateX», «multiRotateY»
+        }
+    </script>
+</head>
+<body>
+
+<div id = "slider"> 
+    <!-- Create three sliders -->
+    <div id="area">
+        <div id="img1" dir="img/1.jpg"> <span class="sp" id="sp1"> <p>Slide 1</p> </span> </div> 
+        <div id="img2" dir="img/2.jpg"> <span class="sp" id="sp2"> <p>Slide 2</p> </span> </div>
+        <div id="img3" dir="img/3.jpg"> <span class="sp" id="sp3"> <p>Slide 3</p> </span> </div>
+    </div>
+        
+    <!-- Add «left arrow» and «right arrow» -->
+    <div id = "slider-arrows">
+        <img id="prev" src="img/leftArrow.png" border = "0"></img>
+        <img id="next" src="img/rightArrow.png" border = "0"></img> 
+    </div>
+        
+    <!-- Add «pagination» -->
+    <div id = "pagination"> </div>
+</div>
+</body>
+</html>

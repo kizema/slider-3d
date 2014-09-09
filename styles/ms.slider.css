@@ -1,0 +1,112 @@
+body
+{
+    margin:0;
+    background-color: #e2ecf8;
+   
+}
+
+/* === Settings "perspectives" === */
+#area
+{
+  position:relative;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+ z-index:1000;
+}
+
+/* === Settings the alignment of the slider in the document === */
+#slider
+{
+    position: relative;
+    top:60px;
+    margin: 0 auto;
+}
+
+/* === Description slide === */
+.sp 
+{
+    position: absolute;
+    top: 356px;
+    background-color: rgba(50, 50, 50, .5);
+    display:none;
+    width:100%;
+    z-index:30;
+}
+
+.sp p
+{
+    font-family: Tahoma, Verdana;
+    color: White;
+    font-size:14px;
+    padding:5px 15px 5px 15px;
+}
+
+
+/* ===  Layer with the arrows === */
+#slider-arrows
+{
+    position: relative;
+    height:23px;
+    top:-230px;
+    margin: 0 auto;
+    z-index: 30;
+}
+
+/* ===  Left arrow === */
+#prev 
+{
+    position: absolute;
+    width:25px;
+    height:43px;
+    left: -60px;
+    cursor:pointer;
+    opacity: 0.8;
+}
+
+/* ===  Right arrow === */
+#next 
+{
+    position:absolute;
+    width:25px;
+    height:43px;
+    left: 775px;
+    cursor:pointer;
+    opacity: 0.8;
+}
+
+/* ===  Layer with the pagination === */
+#pagination 
+{
+    position: relative;
+    margin: 0 auto;
+    width: 60px;
+    height: 20px;
+    cursor:pointer;
+}
+
+
+/* ===  This list pagination === */
+ul#pag 
+{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+ul#pag li
+{
+    float:left;
+    padding: 1px;
+    margin: 0 0px 0 8px;
+    border-radius:7px;
+    background-color:#bcbcbc;
+    list-style:none;
+    width: 10px;
+    height: 10px;
+}
+
+ul#pag li.pActive
+{
+   background-color:#474747;
+   cursor:default;
+}
